@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>On Book</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="navbar" class="navbar hidden">
+  <div class="nav-left"><span class="logo">On Book</span></div>
+  <div class="nav-center">
+    <input type="text" id="searchInput" placeholder="بحث عن مستخدم...">
+    <div id="searchResults" class="search-results hidden"></div>
+  </div>
+  <div class="nav-right">
+    <button id="homeBtn" class="nav-icon-btn" title="الرئيسية">🏠</button>
+    <button id="friendReqBtn" class="nav-icon-btn" title="طلبات الصداقة">
+      👥<span id="friendReqCount" class="badge hidden">0</span>
+    </button>
+    <button id="createPostBtn" class="nav-icon-btn">➕ منشور</button>
+    <button id="createReelBtn" class="nav-icon-btn">🎬 ريل</button>
+    <img id="navAvatar" class="nav-avatar" src="" alt="">
+    <div id="profileDropdown" class="dropdown hidden">
+      <button id="goToMyProfile">حسابي</button>
+      <button id="logoutBtn">تسجيل الخروج</button>
+    </div>
+  </div>
+</header>
+
+<main id="app"></main>
+<div id="modalRoot"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
